@@ -48,6 +48,13 @@ loop(1000){
 }
 ```
 
+Easier try-catch block
+```kotlin
+val value = tryWith(10){
+  functionReturningIntegerThatMightFail()
+}
+```
+
 Resizing a drawable. Keeps it's aspect ratio.
 ```kotlin
 val newDrawable = oldDrawable.resize(255)
