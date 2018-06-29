@@ -69,6 +69,15 @@ fun loop(interval: Long, f: () -> Unit) {
     }
 }
 
+//easier try catch
+fun <T> tryWith(catch: T, func: () -> T): T {
+    return try {
+        func()
+    } catch (e: Exception) {
+        catch
+    }
+}
+
 //resizes a drawable given a height and keeps it's aspect ratio
 fun Drawable.resize(height: Float = 20f): Drawable {
     (this as BitmapDrawable)
