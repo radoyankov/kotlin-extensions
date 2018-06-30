@@ -1,6 +1,8 @@
 # kotlin-extensions
 These are some extension functions that I've found useful while developing Android app with Kotlin
 
+If you have some unique and useful ones, I'd be happy to accept requests.
+
 ## All Examples
 
 
